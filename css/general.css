@@ -10,8 +10,12 @@ body {
   height: 100%;
 }
 @font-face {
-  src: ;
-  font-family: ;
+  src: url(..//media/fonts/BERNHC.TTF);
+  font-family: "bernard";
+}
+@font-face {
+  src: url(..//media/fonts/Italianno-Regular.ttf);
+  font-family: "italianno";
 }
 /**
 #TEXT - H1, H2, H3, P etc etc
@@ -19,10 +23,14 @@ body {
 h1 {
 }
 h2 {
+  font-family: "bernard", "Courier New", Courier, monospace;
 }
 h3 {
+  font-family: "bernard", "Courier New", Courier, monospace;
 }
 p {
+}
+a {
 }
 
 /**
@@ -55,14 +63,7 @@ header {
   align-items: center;
   gap: 20px 40px;
 }
-header img {
-  display: flex;
-  justify-content: center;
 
-  /* Add the following properties to center the image */
-  flex: 1;
-  align-self: center;
-}
 .main-menu ul {
   list-style: none;
   padding: 0;
