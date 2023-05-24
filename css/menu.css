@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+a:visited,
+a:link,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: url(..//media/images/baggrund.webp);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+@font-face {
+  src: url(..//media/fonts/BERNHC.TTF);
+  font-family: "bernard";
+}
+@font-face {
+  src: url(..//media/fonts/Italianno-Regular.ttf);
+  font-family: "italianno";
+}
+/**
+#TEXT - H1, H2, H3, P etc etc
+**/
+h1 {
+  font-family: "italianno", "Courier New", Courier, monospace;
+}
+h2 {
+  font-family: "bernard", "Courier New", Courier, monospace;
+}
+h3 {
+  font-family: "bernard", "Courier New", Courier, monospace;
+}
+p {
+  font-family: monospace, "Courier New", Courier, monospace;
+}
+a {
+  font-family: "bernard", "Courier New", Courier, monospace;
+}
+
+/**
+#TOP/BOTTOM - HEADER, FOOTER
+**/
+header {
+  display: flex;
+  background-color: red;
+  color: white;
+}
+/**
+#NAVIGATION - MENU
+**/
+
+/* header */
