@@ -34,14 +34,16 @@ header {
 #header_container {
 }
 
-footer {
-}
-
 /**
 #NAVIGATION - MENU
 **/
 
 /* header */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .banner {
   background: #910923;
   padding: 2rem;
@@ -53,7 +55,14 @@ footer {
   align-items: center;
   gap: 20px 40px;
 }
+header img {
+  display: flex;
+  justify-content: center;
 
+  /* Add the following properties to center the image */
+  flex: 1;
+  align-self: center;
+}
 .main-menu ul {
   list-style: none;
   padding: 0;
