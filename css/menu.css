@@ -13,9 +13,9 @@ a:active {
 }
 body {
   background-image: url(..//media/images/baggrund.webp);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 @font-face {
   src: url(..//media/fonts/BERNHC.TTF);
@@ -47,13 +47,37 @@ a {
 /**
 #TOP/BOTTOM - HEADER, FOOTER
 **/
-header {
+header nav,
+footer nav {
   display: flex;
-  background-color: red;
-  color: white;
+  justify-content: center;
+  background-color: #fcd1cd;
+  flex-direction: column;
+}
+nav img {
+  width: fit-content;
+  align-self: center;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav li {
+  display: flex;
+  justify-items: center;
+  margin: 15px;
 }
 /**
 #NAVIGATION - MENU
 **/
-
+@media (max-width: 600px) {
+  header ul {
+    display: none;
+  }
+  header div {
+    display: flex;
+  }
+}
 /* header */
