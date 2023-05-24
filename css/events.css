@@ -14,15 +14,10 @@
   margin-right: 10vh;
   margin-top: 10vh;
 }
-/**********.box3 {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}**********/
+
 #left {
   grid-area: 1 span row;
+  margin-left: 6vh;
 }
 button {
   background-color: #2e451a;
@@ -36,6 +31,8 @@ button {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
+  display: block;
+  margin: 0 auto;
 }
 
 p {
