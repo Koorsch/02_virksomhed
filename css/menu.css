@@ -16,6 +16,7 @@ body {
   background-repeat: repeat;
   width: 100%;
   height: auto;
+  margin: auto;
 }
 @font-face {
   src: url(..//media/fonts/BERNHC.TTF);
@@ -43,6 +44,9 @@ p {
 a {
   font-family: "bernard", "Courier New", Courier, monospace;
 }
+li {
+  font-family: "bernard", "Courier New", Courier, monospace;
+}
 
 /**
 #TOP/BOTTOM - HEADER, FOOTER
@@ -51,8 +55,9 @@ header nav,
 footer nav {
   display: flex;
   justify-content: center;
-  background-color: #fcd1cd;
+  background-color: #910923;
   flex-direction: column;
+  color: white;
 }
 nav img {
   width: fit-content;
@@ -69,6 +74,19 @@ nav li {
   justify-items: center;
   margin: 15px;
 }
+footer {
+  font-size: small;
+}
+.menu {
+  display: none;
+}
+.burger {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px;
+  transition: background-color 0.3s ease;
+}
 /**
 #NAVIGATION - MENU
 **/
@@ -76,8 +94,11 @@ nav li {
   header ul {
     display: none;
   }
-  header div {
-    display: flex;
+  .menu {
+    display: block;
+    align-self: self-end;
+    cursor: pointer;
+    padding: 0 15px 5px 0;
   }
 }
 /* header */
