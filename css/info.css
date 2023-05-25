@@ -1,0 +1,37 @@
+.box {
+  background-color: white;
+  padding: 50px;
+  margin: 60px;
+  border: double rgb(141, 5, 5);
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(141, 5, 5);
+}
+
+hr {
+  color: rgb(141, 5, 5);
+}
+.paabning {
+  margin: 50px;
+}
+
+.mgp {
+  height: 400px;
+  width: auto;
+  margin-left: 700px;
+  margin-top: 2px;
+}
+
+h2 {
+  font-size: 60px;
+  font-family: "italianno", "Courier New", Courier, monospace;
+  text-align: center;
+  color: rgb(141, 5, 5);
+}
+
+.pkontakt {
+  margin: 50px;
+}
