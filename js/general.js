@@ -1,3 +1,7 @@
+window.addEventListener("load", function () {
+  var video = document.getElementById("myVideo");
+  video.play();
+});
 // Lav variablen "btn", der henviser til ".toggle-btn"
 const btn = document.querySelector(".toggle-btn");
 // Lav variablen "menu", der henviser til ".main-menu"
