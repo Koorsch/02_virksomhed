@@ -90,7 +90,11 @@ footer {
 /**
 #NAVIGATION - MENU
 **/
+
 @media (max-width: 600px) {
+  /**
+    BURGERMENU 
+**/
   header ul {
     display: none;
   }
@@ -101,4 +105,3 @@ footer {
     padding: 0 15px 5px 0;
   }
 }
-/* header */

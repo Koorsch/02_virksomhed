@@ -3,11 +3,20 @@
   margin: 0;
   padding: 0;
 }
+a:visited,
+a:link,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
+  list-style: none;
+}
 body {
-  background-image: url(../media/images/baggrund.webp);
-  background-repeat: no-repeat;
+  background-image: url(..//media/images/baggrund.webp);
+  background-repeat: repeat;
   width: 100%;
-  height: 100%;
+  height: auto;
+  margin: auto;
 }
 @font-face {
   src: url(..//media/fonts/BERNHC.TTF);
@@ -21,6 +30,7 @@ body {
 #TEXT - H1, H2, H3, P etc etc
 **/
 h1 {
+  font-family: "italianno", "Courier New", Courier, monospace;
 }
 h2 {
   font-family: "bernard", "Courier New", Courier, monospace;
@@ -29,79 +39,69 @@ h3 {
   font-family: "bernard", "Courier New", Courier, monospace;
 }
 p {
+  font-family: monospace, "Courier New", Courier, monospace;
 }
 a {
+  font-family: "bernard", "Courier New", Courier, monospace;
+}
+li {
+  font-family: "bernard", "Courier New", Courier, monospace;
 }
 
 /**
 #TOP/BOTTOM - HEADER, FOOTER
 **/
-
-header {
+header nav,
+footer nav {
+  display: flex;
+  justify-content: center;
+  background-color: #910923;
+  flex-direction: column;
+  color: white;
 }
-#header_container {
+nav img {
+  width: fit-content;
+  align-self: center;
 }
-
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav li {
+  display: flex;
+  justify-items: center;
+  margin: 15px;
+}
+footer {
+  font-size: small;
+}
+.menu {
+  display: none;
+}
+.burger {
+  width: 30px;
+  height: 4px;
+  background-color: white;
+  margin: 6px;
+  transition: background-color 0.3s ease;
+}
 /**
 #NAVIGATION - MENU
 **/
 
-/* header */
-header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.banner {
-  background: #910923;
-  padding: 2rem;
-
-  /* 1. Få elementerne til at stå ved siden af hinanden og brug justify-content til at skubbe dem væk fra hinanden */
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px 40px;
-}
-
-.main-menu ul {
-  list-style: none;
-  padding: 0;
-
-  /* 2. Få elementerne til at stå ved siden af hinanden */
-  display: flex;
-  gap: 1rem;
-}
-
-/* burgermenu */
-.toggle-btn {
-  background: transparent;
-  border: none;
-  min-width: 44px;
-  min-height: 44px;
-  font-size: 1.1rem;
-  cursor: pointer;
-  display: none;
-}
-
 @media (max-width: 600px) {
-  .toggle-btn {
-    display: block;
-  }
-
-  .main-menu.shown {
-    display: contents;
-  }
-
-  .main-menu ul {
+  /**
+    BURGERMENU 
+**/
+  header ul {
     display: none;
   }
-
-  .main-menu.shown ul {
-    border-top: 1px solid #000;
-    padding-top: 1rem;
-    display: flex;
-    flex-flow: column;
-    flex-basis: 100%;
+  .menu {
+    display: block;
+    align-self: self-end;
+    cursor: pointer;
+    padding: 0 15px 5px 0;
   }
 }
