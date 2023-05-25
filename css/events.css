@@ -66,3 +66,43 @@ footer ul {
   color: white;
   margin-top: 10vh;
 }
+
+@media (max-width: 600px) {
+  .box {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 5vh;
+  }
+
+  .box2 {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+  }
+
+  #left {
+    grid-area: 1 span row;
+    margin-left: 6vh;
+    margin-right: 6vh;
+  }
+  button {
+    background-color: #2e451a;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+}
