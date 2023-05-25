@@ -1,0 +1,11 @@
+.box {
+  background-color: white;
+  padding: 50px;
+  margin: 60px;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: rgb(107, 2, 2);
+}
