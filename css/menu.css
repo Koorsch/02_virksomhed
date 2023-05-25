@@ -14,9 +14,6 @@ a:active {
 body {
   background-image: url(..//media/images/baggrund.webp);
   background-repeat: repeat;
-  width: 100%;
-  height: auto;
-  margin: auto;
 }
 @font-face {
   src: url(..//media/fonts/BERNHC.TTF);
@@ -58,13 +55,13 @@ footer {
   justify-items: center;
   align-items: center;
   color: white;
+  display: grid;
 }
 header {
-  display: grid;
   grid-template-rows: repeat(2, 1fr);
+  padding: 10px;
 }
 footer {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
 }
@@ -92,7 +89,6 @@ BOX
 **/
 .box {
   display: grid;
-  width: fit-content;
   margin: 20px;
   padding: 10px;
   background-color: white;
@@ -101,15 +97,34 @@ BOX
 /**
 BOXTING
 **/
-#menu_container {
+.grid2 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
 }
-#menu_container img {
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid2.preview img {
   width: 50%;
   height: 50%;
 }
-
+.preview {
+}
+/**
+VIDEO/IMAGE FORMAT ETC
+**/
+header video {
+  aspect-ratio: 16/9;
+  display: block;
+  width: fit-content;
+  height: auto;
+  pointer-events: none;
+}
+img {
+  width: fit-content;
+  height: auto;
+}
 @media (max-width: 600px) {
   header ul {
     display: flex;
