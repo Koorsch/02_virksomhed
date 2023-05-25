@@ -19,6 +19,7 @@
   grid-area: 1 span row;
   margin-left: 6vh;
 }
+
 button {
   background-color: #2e451a;
   color: white;
@@ -55,8 +56,11 @@ video {
   width: 100%;
 }
 
-footer {
-  text-align: center;
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2rem;
   padding: 3px;
   background-color: #910923;
   color: white;

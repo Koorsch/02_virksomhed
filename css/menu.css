@@ -51,18 +51,27 @@ li {
 /**
 #TOP/BOTTOM - HEADER, FOOTER
 **/
-header nav,
-footer nav {
-  display: flex;
-  justify-content: center;
+header,
+footer {
   background-color: #910923;
-  flex-direction: column;
+  width: 100%;
+  justify-items: center;
+  align-items: center;
   color: white;
 }
-nav img {
-  width: fit-content;
-  align-self: center;
+header {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+
+/**
+#NAVIGATION - MENU
+**/
 nav ul {
   display: flex;
   list-style: none;
@@ -71,37 +80,38 @@ nav ul {
 }
 nav li {
   display: flex;
+  flex-direction: column;
   justify-items: center;
   margin: 15px;
 }
-footer {
-  font-size: small;
-}
-.menu {
-  display: none;
-}
-.burger {
-  width: 30px;
-  height: 4px;
-  background-color: white;
-  margin: 6px;
-  transition: background-color 0.3s ease;
+footer ul {
+  list-style: none;
 }
 /**
-#NAVIGATION - MENU
+BOX
 **/
+.box {
+  display: grid;
+  width: fit-content;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 3px;
+}
+/**
+BOXTING
+**/
+#menu_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#menu_container img {
+  width: 50%;
+  height: 50%;
+}
 
 @media (max-width: 600px) {
-  /**
-    BURGERMENU 
-**/
   header ul {
-    display: none;
-  }
-  .menu {
-    display: block;
-    align-self: self-end;
-    cursor: pointer;
-    padding: 0 15px 5px 0;
+    display: flex;
   }
 }
