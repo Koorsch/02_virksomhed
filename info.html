@@ -12,66 +12,96 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <a href="index.html"><img src="media/images/logo.png" alt="logo"></a>
-            </div>
-
-            <ul>
-
-                <li><a href="booking.html">Booking</a></li>
+    <header class="banner">
+        <div class="logo">
+            <a href="index.html">
+                <img src="media/images/logo_rund.png" alt="logo"></a>
+            <h1>M.G Petersens familiehave</h1>
+        </div>
+        <nav id="main-menu">
+            <button type="button" id="menu_toggle" onclick="toggleMenu">
+                <span>Navigation</span>
+            </button>
+            <ul class="menu">
+                <li><a href="booking.html">Book Bord</a></li>
                 <li><a href="events.html">Events</a></li>
-                <li><a href="info.html">Info</a></li>
                 <li><a href="menu.html">Menu</a></li>
+                <li><a href="info.html">Information</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <div class="box">
+
+    <main class="content">
+        <div class="boks">
             <div>
                 <h1>Åbningstider</h1>
             </div>
             <hr>
-            <div class="paabning">
-                <p>Restaurantens åbningstider:​<br>
-                    ​<br><br>
-                    1. maj - 9. september 2023<br>
-                    Alle dage 11.00 - 23.00<br>
-                    (Køkkenet lukker 21.30)<br>
-                    <br><br>
-                    10. september 2023<br>
-                    Sidste åbningsdag for denne sæson<br>
-                    ​- kun buffet.<br>
-                    Åbent fra 12.00 - 17.00.​<br>
-                    <br>
-                    <br> ​<br>
+            <div class="grid1">
+                <div class="paabning">
+                    <p>Restaurantens åbningstider:​<br>
+                        ​<br><br>
+                        1. maj - 9. september 2023<br>
+                        Alle dage 11.00 - 23.00<br>
+                        (Køkkenet lukker 21.30)<br>
+                        <br><br>
+                        10. september 2023<br>
+                        Sidste åbningsdag for denne sæson<br>
+                        ​- kun buffet.<br>
+                        Åbent fra 12.00 - 17.00.​<br>
+                        <br>
+                        <br> ​<br>
 
-                    Lukket i vinterhalvåret
-                </p>
+                        Lukket i vinterhalvåret
+                    </p>
+
+                </div>
+                <img src="GOPR0004.JPG" alt="mgp" class="mgp">
 
             </div>
-            <img src="GOPR0004.JPG" alt="mgp" class="mgp">
             <h2>
                 Kontakt
             </h2>
             <hr>
-            <div class="pkontakt">
-                <p>
-                    Adresse:<br>
-                    <br>
-                    Tlf:<br>
-                    <br>
-                    E-mail:
-                </p>
+            <div class="grid2">
+                <div>
+                    <p>
+                        Adresse:<br>
+                        <br>
+                        Tlf:<br>
+                        <br>
+                        E-mail:
+                    </p>
+                </div>
+                <div class="pkontakt">
+                    <p>
+                        Pile Allé 16, 2000 Frederiksberg <br>
+                        <br>
+                        36 36 11 33<br>
+                        <br>
+                        Mail@petersensfamiliehave.dk
+
+                    </p>
+                </div>
             </div>
         </div>
 
     </main>
-    <footer>
 
+    <footer>
+        <img src="media/images/logo_rund.png" alt="Logo">
+        <ul id="footer_menu">
+            <li>Pile Allé 16, 2000 Frederiksberg</li>
+            <li>+45 3616 1133</li>
+            <li><a href="mailto:mail@petersensfamiliehave.dk">mail@petersensfamiliehave.dk</a></li>
+        </ul>
+        <div id="socials">
+            <img src="#" alt="dummy image1">
+            <img src="#" alt="dummy image1">
+        </div>
     </footer>
     <script src="js/general.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>

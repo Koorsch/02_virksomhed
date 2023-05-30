@@ -13,22 +13,23 @@
 <body>
     <header class="banner">
         <div class="logo">
-            <a href="index.html"><img src="media/images/logo.png" alt="logo"></a>
+            <a href="index.html">
+                <img src="media/images/logo_rund.png" alt="logo"></a>
+            <h1>M.G Petersens familiehave</h1>
         </div>
-
-        <nav class="main-menu">
-
-            <ul>
-                <li><a href="booking.html">Reservation</a></li>
+        <nav id="main-menu">
+            <button type="button" id="menu_toggle" onclick="toggleMenu">
+                <span>Navigation</span>
+            </button>
+            <ul class="menu">
+                <li><a href="booking.html">Book Bord</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="menu.html">Menu</a></li>
-                <li><a href="events.html">Musik</a></li>
-                <li><a href="info.html">Åbningstider</a></li>
+                <li><a href="info.html">Information</a></li>
             </ul>
-
         </nav>
     </header>
-
-    <main>
+    <main class="content">
 
         <div class="box">
             <div id="left">
@@ -61,15 +62,21 @@
         </section>
 
     </main>
-    <footer>
-        <ul>
-            <li>Pile Allé 16, 2000 Frederiksberg</li>
-            <li>Telefon: 3616 1133</li>
-            <li>E-mail: mail@petersensfamiliehave.dk</li>
-        </ul>
 
+    <footer>
+        <img src="media/images/logo_rund.png" alt="Logo">
+        <ul id="footer_menu">
+            <li>Pile Allé 16, 2000 Frederiksberg</li>
+            <li>+45 3616 1133</li>
+            <li><a href="mailto:mail@petersensfamiliehave.dk">mail@petersensfamiliehave.dk</a></li>
+        </ul>
+        <div id="socials">
+            <img src="#" alt="dummy image1">
+            <img src="#" alt="dummy image1">
+        </div>
     </footer>
     <script src="js/general.js"></script>
+    <script src="js/login.js"></script>
 </body>
 
 </html>
