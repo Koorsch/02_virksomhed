@@ -20,7 +20,7 @@ html {
   --h1_font: "ital";
   --h2_font: "bern";
   --h3_font: "bern";
-  --font: "Courier New", Courier, monospace;
+  --font: monospace, Courier, monospace;
 }
 a:visited,
 a:link,
@@ -45,28 +45,27 @@ h1 {
   color: #910923;
   margin-left: 30px;
   margin-top: 80px;
+  margin-bottom: 20px;
 }
 h2 {
-  font-family: "bernard", "Courier New", Courier, monospace;
+  font-family: var(--h2_font), var(--font);
+  font-size: 3.5rem;
 }
 h3 {
-  font-family: "bernard", "Courier New", Courier, monospace;
+  font-family: var(--h3_font), var(--font);
+  font-size: 2rem;
 }
 p {
-  font-family: monospace, "Courier New", Courier, monospace;
-  line-height: 1.8;
-  margin: 0 30px 30px 30px;
-  padding-bottom: 30px;
+  font-family: var(--font);
+  font-size: 1rem;
 }
-a {
-  font-family: "bernard", "Courier New", Courier, monospace;
-}
+a,
 li {
-  font-family: "bernard", "Courier New", Courier, monospace;
+  font-family: var(--font);
+  font-size: 1.5rem;
 }
 
-/**
-#TOP/BOTTOM - HEADER, FOOTER
+/** #TOP - HEADER
 **/
 header {
   display: flex;
@@ -90,7 +89,7 @@ header {
   width: 130px;
 }
 
-/* BOTTOM - FOOTER     */
+/* #BOTTOM - FOOTER     */
 footer {
   display: flex;
   flex-direction: row;
@@ -99,8 +98,8 @@ footer {
   background-color: var(--primary);
   color: var(--secondary);
   gap: 10px;
+  flex-grow: 1;
   padding: 15px 0 5px 0;
-  max-width: 1558px;
   margin: auto;
 }
 footer a:link {
@@ -167,17 +166,27 @@ CONTENT - main content box
 /**
 BOXTING
 **/
-.grid2 {
+
+.box {
+  background-color: white;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 10vh;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 5vh;
 }
-.grid3 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
+.box2 {
+  background-color: white;
+  margin-left: 10vh;
+  margin-right: 10vh;
+  margin-top: 10vh;
 }
-.grid2.preview img {
-  width: 50%;
-  height: 50%;
+
+#left {
+  grid-area: 1 span row;
+  margin-left: 6vh;
 }
 
 @media (max-width: 600px) {
@@ -223,6 +232,43 @@ BOXTING
   /* Menu gemt i desktop størrelse */
   .menu {
     display: none;
+  }
+  .box {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 5vh;
+  }
+
+  .box2 {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+  }
+
+  #left {
+    grid-area: 1 span row;
+    margin-left: 6vh;
+    margin-right: 6vh;
+  }
+  button {
+    background-color: #2e451a;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
   }
 
   /* JS interaktion */
