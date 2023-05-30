@@ -33,7 +33,7 @@ a:active {
 body {
   background-image: url(..//media/images/baggrund.webp);
   background-repeat: repeat;
-  max-width: 1600px;
+  width: 100%;
   margin: auto;
 }
 /**

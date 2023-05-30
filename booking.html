@@ -12,24 +12,25 @@
 </head>
 
 <body>
-    <header>
-        <nav id="head">
+    <header class="banner">
+        <div class="logo">
             <a href="index.html">
-                <img src="media/images/logo.png" alt="Logo"></a>
-            <ul id="header_menu">
+                <img src="media/images/logo_rund.png" alt="logo"></a>
+            <h1>M.G Petersens familiehave</h1>
+        </div>
+        <nav id="main-menu">
+            <button type="button" id="menu_toggle" onclick="toggleMenu">
+                <span>Navigation</span>
+            </button>
+            <ul class="menu">
                 <li><a href="booking.html">Book Bord</a></li>
-                <li><a href="events.html">Evenemanger</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="info.html">Information</a></li>
             </ul>
-            <div class="burger" id="burger_menu">
-                <div class="burger"></div>
-                <div class="burger"></div>
-                <div class="burger"></div>
-            </div>
         </nav>
     </header>
-    <main>
+    <main class="content">
         <div class="box">
             <div>
                 <h1>Reserver bord</h1>
