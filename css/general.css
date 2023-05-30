@@ -40,7 +40,7 @@ body {
 #TEXT - H1, H2, H3, P etc etc
 **/
 h1 {
-  font-family: "italianno", "Courier New", Courier, monospace;
+  font-family: var(--h1_font);
   font-size: 3rem;
   color: #910923;
 }
@@ -75,6 +75,7 @@ header {
   justify-content: space-between;
   display: flex;
   flex-direction: column;
+  margin: 1vw 8vw;
 }
 .logo {
   display: grid;
@@ -84,7 +85,7 @@ header {
   width: 100%;
 }
 .logo h1 {
-  font-size: calc(100vw / 12);
+  font-size: calc(100vw / 14);
 }
 .logo img {
   width: 130px;
@@ -102,18 +103,18 @@ footer {
   flex-grow: 1;
   padding: 15px 0 5px 0;
   margin: auto;
+  font-size: calc(70vw / 55);
 }
 footer a:link {
   color: var(--secondary);
-}
-footer:first-of-type img {
-  width: 120px;
+  font-size: inherit;
 }
 footer li {
   display: flex;
   padding: 10px;
   align-content: space-between;
   justify-content: space-between;
+  font-size: inherit;
 }
 /**
 #NAVIGATION - MENU
@@ -158,8 +159,8 @@ CONTENT - main content box
 .content {
   display: flex;
   flex-direction: column;
-  margin: 0.5rem 2rem;
-  padding: 10px;
+  margin: 3vw 10vw;
+  padding: 0.5rem;
   background-color: var(--secondary);
   border: var(--primary) solid 2px;
   border-radius: 3px;
@@ -167,7 +168,6 @@ CONTENT - main content box
 /**
 BOXTING
 **/
-
 .box {
   background-color: white;
   margin-left: 10vh;
@@ -177,24 +177,22 @@ BOXTING
   grid-template-columns: 1fr 1fr;
   padding-bottom: 5vh;
 }
-
 .box2 {
   background-color: white;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 10vh;
 }
-
 #left {
   grid-area: 1 span row;
   margin-left: 6vh;
 }
-
 /* MEDIA QUERIES TIL STØRRELSER */
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   footer ul {
-    flex-direction: column;
     flex-wrap: wrap;
+    flex-direction: column;
+    font-size: calc(80vw / 45);
   }
 }
 @media (max-width: 600px) {
@@ -301,7 +299,7 @@ BOXTING
   }
   footer {
     padding: 20px;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
