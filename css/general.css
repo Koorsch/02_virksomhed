@@ -60,6 +60,8 @@ h3 {
 p {
   font-family: var(--font);
   font-size: 1rem;
+  line-height: 1.8;
+  padding-bottom: 30px;
 }
 a,
 li {
@@ -175,19 +177,22 @@ BOXTING
 **/
 .box {
   background-color: white;
-  margin-left: 10vh;
-  margin-right: 10vh;
+
   margin-top: 10vh;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   padding-bottom: 5vh;
+  width: 100%;
 }
 .box2 {
   background-color: white;
-  margin-left: 10vh;
-  margin-right: 10vh;
-  margin-top: 10vh;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
+
 #left {
   grid-area: 1 span row;
   margin-left: 6vh;
