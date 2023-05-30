@@ -1,37 +1,48 @@
-.box {
+.boks {
   background-color: white;
   padding: 50px;
   margin: 60px;
-  border: double rgb(141, 5, 5);
+  border: double #910923;
 }
 
 h1 {
   font-size: 60px;
   text-align: center;
-  color: rgb(141, 5, 5);
+  color: #910923;
 }
 
 hr {
-  color: rgb(141, 5, 5);
+  color: #910923;
 }
 .paabning {
   margin: 50px;
 }
 
 .mgp {
-  height: 400px;
+  height: 500px;
   width: auto;
-  margin-left: 700px;
-  margin-top: 2px;
+  margin-top: 30px;
+  border: double #910923;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 h2 {
   font-size: 60px;
   font-family: "italianno", "Courier New", Courier, monospace;
   text-align: center;
-  color: rgb(141, 5, 5);
+  color: #910923;
 }
 
 .pkontakt {
+  text-align: right;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   margin: 50px;
 }
