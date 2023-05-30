@@ -1,27 +1,21 @@
-// Lav variablen "btn", der henviser til ".toggle-btn"
-const btn = document.querySelector(".toggle-btn");
-// Lav variablen "menu", der henviser til ".main-menu"
-const menu = document.querySelector(".main-menu");
+/* Deklarere knap og menu*/
+const btn = document.querySelector("#menu_toggle");
+const menu = document.querySelector(".menu");
 
-// Lav funktionen "toggleMenu()" med følgende funktionalitet
+/* Kigge efter clicks på knappen*/
+btn.addEventListener("click", toggleMenu);
+
 function toggleMenu() {
-  // a) toggle klassen "shown" på menu vha. classList.toggle
+  /* Simple toggle med klasstilføjelse der kigger i CSS'n */
   menu.classList.toggle("shown");
 
-  // b) lav variablen "menuShown", som siger, at menu-variablen indeholder klassen "shown" via classList.contains("")
+  /* #Deklarerer en variable der kigger hvis togglen er igang,
+      console.log når der klikkes. 
   const menuShown = menu.classList.contains("shown");
-
-  // c) spørg om "menuShown" i if-sætningen nedenfor (=> if (menuShown)), og udskift teksten
   if (menuShown) {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Luk", hvis menuShown er "true"
-    btn.textContent = "Luk";
+    console.log(menuShown);
   } else {
-    console.log(menuShown); // se i konsollen
-    // sæt btn.textContent til "Menu", hvis menuShown er "false"
-    btn.textContent = "Menu";
+    console.log(menuShown);
   }
+  */
 }
-
-// Tilføj et klik-event til "btn", der sætter toggleMenu-funktionen i gang
-btn.addEventListener("click", toggleMenu);
