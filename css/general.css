@@ -40,7 +40,7 @@ body {
 #TEXT - H1, H2, H3, P etc etc
 **/
 h1 {
-  font-family: "italianno", "Courier New", Courier, monospace;
+  font-family: var(--h1_font);
   font-size: 3rem;
   color: #910923;
 }
