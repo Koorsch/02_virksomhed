@@ -6,6 +6,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 5vh;
+  outline-style: solid;
+  outline-color: #910923;
+  outline-width: 2px;
 }
 
 .box2 {
@@ -44,7 +47,7 @@ p {
 
 h1 {
   font-family: "italianno", "Courier New", Courier, monospace;
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #910923;
   margin-left: 30px;
   margin-top: 80px;
@@ -76,6 +79,9 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 5vh;
+    outline-style: solid;
+    outline-color: #910923;
+    outline-width: 2rem;
   }
 
   .box2 {

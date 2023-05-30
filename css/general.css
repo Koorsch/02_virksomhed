@@ -135,6 +135,9 @@ footer ul {
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding-bottom: 5vh;
+  outline-style: solid;
+  outline-color: #910923;
+  outline-width: 2px;
 }
 
 .box2 img {
@@ -159,6 +162,9 @@ footer ul {
     display: grid;
     grid-template-columns: 1fr;
     padding-bottom: 5vh;
+    outline-style: solid;
+    outline-color: #910923;
+    outline-width: 2px;
   }
 
   .box2 {
