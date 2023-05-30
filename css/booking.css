@@ -44,6 +44,11 @@ p {
   margin: 0 50px 30px 50px;
   padding-bottom: 5px;
 }
+hr {
+  color: #910923;
+  margin-bottom: 20px;
+  width: 92%;
+}
 
 h1 {
   font-family: "italianno", "Courier New", Courier, monospace;
