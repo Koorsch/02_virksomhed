@@ -3,6 +3,11 @@
   margin: 0;
   padding: 0;
 }
+.content img {
+  width: auto;
+  border: double #2e451a;
+  border-width: 6px;
+}
 @font-face {
   src: url(..//media/fonts/Italianno-Regular.ttf);
   font-family: "ital";
