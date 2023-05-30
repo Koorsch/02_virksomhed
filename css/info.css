@@ -2,7 +2,8 @@
   background-color: white;
   padding: 50px;
   margin: 60px;
-  border: double #910923;
+
+  border-width: 7px;
 }
 
 h1 {
@@ -22,7 +23,8 @@ hr {
   height: 500px;
   width: auto;
   margin-top: 30px;
-  border: double #910923;
+  border: double #2e451a;
+  border-width: 6px;
 }
 
 .grid1 {
