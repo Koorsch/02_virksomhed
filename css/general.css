@@ -206,6 +206,11 @@ hr {
   width: 100%;
   height: auto;
 }
+.videobox {
+  background-color: white;
+  margin-left: 10vh;
+  margin-right: 10vh;
+}
 
 #left {
   grid-area: 1 span row;
