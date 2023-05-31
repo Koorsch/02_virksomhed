@@ -315,8 +315,30 @@ BOXTING
 
 video {
   width: 100%;
+  position: relative;
 }
 
 .video {
   width: 100%;
+}
+.overlay-button {
+  position: absolute;
+  left: 50%;
+  bottom: 90px;
+  transform: translateX(-50%);
+  background-color: #2e451a;
+  color: white;
+  border: none;
+  padding: 13px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+  display: block;
+  margin: 0 auto;
+  font-weight: 500;
+  border: solid 1px white;
 }
