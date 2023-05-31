@@ -1,18 +1,20 @@
-.box {
+.box8 {
   background-color: white;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  margin-left: 10vh;
+  margin-top: 10vh;
 }
 
-.box2 {
+.box9 {
   background-color: white;
   margin-left: 10vh;
   margin-right: 10vh;
   margin-top: 10vh;
 }
 
-#left {
+#left1 {
   grid-area: 1 span row;
 }
 
@@ -48,7 +50,7 @@ video {
 }
 
 @media (max-width: 600px) {
-  .box {
+  .box8 {
     background-color: white;
     margin-left: 10vh;
     margin-right: 10vh;
@@ -61,14 +63,14 @@ video {
     outline-width: 2rem;
   }
 
-  .box2 {
+  .box9 {
     background-color: white;
     margin-left: 10vh;
     margin-right: 10vh;
     margin-top: 10vh;
   }
 
-  #left {
+  #left1 {
     grid-area: 1 span row;
     margin-left: 6vh;
     margin-right: 6vh;
