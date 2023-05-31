@@ -1,28 +1,14 @@
-@media (min-width: 800px) {
-  .box {
-    background-color: white;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 10vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 5vh;
-    text-align: center;
-  }
-  p {
-    padding-left: 10vh;
-    padding-right: 10vh;
-  }
-}
-.box {
+.box-j {
   background-color: white;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-top: 2vh;
-  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
 }
-
+.box-row {
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 100%;
+  height: 100%;
+}
 button {
   background-color: #2e451a;
   color: white;
@@ -41,8 +27,7 @@ button {
 
 p {
   line-height: 1.6;
-  margin: 0 50px 30px 50px;
-  padding-bottom: 5px;
+  max-width: 45ch;
 }
 hr {
   color: #910923;
@@ -53,4 +38,18 @@ h2 {
   text-align: center;
   padding: 40px 20px 20px 20px;
   color: #910923;
+}
+@media (max-width: 1000px) {
+  .box-j {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
+
+@media (max-width: 800px) {
+  .box-j {
+    grid-template-columns: 1fr;
+  }
 }
