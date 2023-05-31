@@ -1,26 +1,9 @@
-@media (min-width: 800px) {
-  .box {
-    background-color: white;
-    margin-left: 10vh;
-    margin-right: 10vh;
-    margin-top: 10vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-bottom: 5vh;
-    text-align: center;
-  }
-  p {
-    padding-left: 10vh;
-    padding-right: 10vh;
-  }
-}
-.box {
+.box-j {
   background-color: white;
-  margin-left: 2vh;
-  margin-right: 2vh;
-  margin-top: 2vh;
-  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   text-align: center;
+  padding-bottom: 30px;
 }
 
 button {
@@ -32,7 +15,6 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
   display: block;
@@ -41,16 +23,38 @@ button {
 
 p {
   line-height: 1.6;
-  margin: 0 50px 30px 50px;
-  padding-bottom: 5px;
+  max-width: 45ch;
+  padding-right: 30px;
 }
 hr {
   color: #910923;
   margin-bottom: 20px;
+  margin-right: 40px;
 }
 
 h2 {
   text-align: center;
   padding: 40px 20px 20px 20px;
   color: #910923;
+}
+@media (max-width: 1000px) {
+  .box-j {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .box-j {
+    grid-template-columns: 1fr;
+    gap: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  p {
+    margin-left: 120px;
+  }
 }
