@@ -1,24 +1,24 @@
 const pdfFrame = document.querySelector("#pdfFrame");
 const pdfContainer = document.getElementById("pdfContainer");
-const iframeW = pdfFrame.contentWindow || pdfFrame.contentDocument;
 
 function printMenu() {
-  // Open the PDF in a new window or tab
+  const iframeW = pdfFrame.contentWindow || pdfFrame.contentDocument;
+
+  // Åbn pdf i nyt vindue
   const printW = window.open(iframeW.location.href, "_blank");
 
-  // Wait for the PDF to load
+  // Venter på at pdf'n skal loade
   printW.addEventListener("load", function () {
-    // Call the print function on the new window
+    // Print når det er klart at loade
     printW.print();
 
-    // Close the window after a delay (100 milliseconds in this example)
-    const closePrintWindow = function () {
+    // Luk automatisk efter 2000ms hvis man ikke trykker
+    setTimeout(function () {
       printW.close();
-    };
-    setTimeout(closePrintWindow, 100);
+    }, 2000);
   });
 
-  // Handle the cancellation of the print dialog
+  // Luk hvis man ikke trykker rigtigt.
   const cancelPrint = function () {
     printW.close();
   };
@@ -36,5 +36,6 @@ function closeMenu() {
 }
 
 function saveMenu() {
+  const iframeW = pdfFrame.contentWindow || pdfFrame.contentDocument;
   iframeW.postMessage("save", "*");
 }

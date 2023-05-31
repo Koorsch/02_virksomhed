@@ -31,26 +31,46 @@
         </nav>
     </header>
     <main class="content">
-        <div class="container">
-            <div class="box-2">
-                <div>
-                    <h2>Vores lækre menuer!</h2>
-                    <p>Herdine finder du alt vi har at tilbude, fra lækre smørrebrød til varme dejlige danske retter.
-                    </p>
+        <section id="menuer">
+            <div class="container">
+                <div class="box-3">
+                    <div></div>
+                    <div class="box-content">
+                        <h2>Havens lækkreste menuer!</h2>
+                        <hr>
+                        <p>Herinde finder du alt vi har at tilbude, fra lækkre smørrebrød til varme dejlige danske
+                            retter. Frokost, aftensmad og desserter - vi har noget for alle!
+                        </p>
+                        <div id="billede" class="border-box"><img class="rotate" src="media/images/smorrebrod.webp"
+                                alt="En lækker billede"></div>
+                        <hr>
+                    </div>
+
                 </div>
-                <div class="menu-thumbnails flex-col border-box">
-                    <img src="#" alt="Gælder hele dagen" onclick="openMenu('media/dokument/MENU/helemenu.pdf')">
-                    <img src="#" alt="Vores lækkre smørrebrød" onclick="openMenu('media/dokument/MENU/smorrebrod.pdf')">
+                <div>
+                    <div class="menu-thumbnails border-box" id="thumbnails-1">
+                        <button class="content-button" type="button"
+                            onclick="openMenu('media/dokument/MENU/helemenu.pdf')">Gælder hele
+                            dagen</button>
+                        <button class="content-button" type="button"
+                            onclick="openMenu('media/dokument/MENU/smorrebrod.pdf')">Vores
+                            Smørrebrød</button>
+
+                        <!-- Prøver skifter ud fra billeder lige som dem nedenfor-->
+                        <!-- <img src="media/images/menu/heledagen.webp" alt="Gælder hele dagen"
+                        onclick="openMenu('media/dokument/MENU/helemenu.pdf')">
+                    <img src="media/images/menu/smorrebrod.webp" alt="Vores lækkre smørrebrød"
+                        onclick="openMenu('media/dokument/MENU/smorrebrod.pdf')"> -->
+                    </div>
                 </div>
             </div>
-            <div class="box-3"></div>
-        </div>
-        <section id="menuer">
-
-            <div class="menu-thumbnails">
-                <img src="#" alt="Frokostmenu" onclick="openMenu('media/dokument/MENU/frokost.pdf')">
-                <img src="#" alt="Aftensmenu" onclick="openMenu('media/dokument/MENU/aftensmad.pdf')">
-                <img src="#" alt="Desserter" onclick="openMenu('media/dokument/MENU/desserter.pdf')">
+            <div class="menu-thumbnails" id="thumbnails-2">
+                <img src="media/images/menu/frokost.webp" alt="Frokostmenu"
+                    onclick="openMenu('media/dokument/MENU/frokost.pdf')">
+                <img src="media/images/menu/aftensmad.webp" alt="Aftensmenu"
+                    onclick="openMenu('media/dokument/MENU/aftensmad.pdf')">
+                <img src="media/images/menu/desserter.webp" alt="Desserter"
+                    onclick="openMenu('media/dokument/MENU/desserter.pdf')">
             </div>
 
             <div class="pdf-container" id="pdfContainer">
@@ -60,12 +80,10 @@
                         <button type="button" class="pdf-save-button" onclick="saveMenu()">Gem</button>
                         <button type="button" class="pdf-close-button" onclick="closeMenu()">Sluk</button>
                     </div>
-                    <iframe title="Forhandsvisning" id="pdfFrame" src="" width="100%" height="100%"></iframe>
+                    <iframe title="Forhandsvisning af Menuer" id="pdfFrame" src="" width="100%" height="100%"></iframe>
                 </div>
             </div>
         </section>
-
-
     </main>
     <footer>
         <ul id="footer_menu">
