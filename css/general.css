@@ -365,7 +365,7 @@ hr {
   position: absolute;
   left: 50%;
   color: var(--secondary);
-  bottom: 100px;
+  bottom: 130px;
   transform: translateX(-50%);
   background-color: #2e451a;
   border: none;
@@ -373,7 +373,7 @@ hr {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 30px;
+  font-size: 40px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
@@ -390,7 +390,7 @@ hr {
   .overlay-button {
     font-size: 20px;
     padding: 10px 20px;
-    bottom: 370px;
+    bottom: 390px;
   }
   .overlay-button a {
     color: var(--secondary);
@@ -399,7 +399,7 @@ hr {
 
 .arrow {
   position: absolute;
-  top: 85%;
+  top: 80%;
   right: 50px;
   transform: translateY(-50%) rotate(45deg);
   width: 30px;
