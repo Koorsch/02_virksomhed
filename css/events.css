@@ -5,11 +5,10 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.box2 {
+.videobox {
   background-color: white;
   margin-left: 10vh;
   margin-right: 10vh;
-  margin-top: 10vh;
 }
 
 #left {
