@@ -2,7 +2,11 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: #910923;
+<<<<<<< HEAD
+  margin-top: 40px;
+=======
   margin-top: px;
+>>>>>>> 2f726ed21dd82cd44107e35de40e21db03506a0c
 }
 hr {
   color: #910923;
@@ -47,7 +51,6 @@ h3 {
     background-color: white;
     padding: 50px;
     margin: 60px;
-
     border-width: 7px;
   }
 
