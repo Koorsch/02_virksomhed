@@ -389,3 +389,26 @@ hr {
     bottom: 370px;
   }
 }
+
+.arrow {
+  position: absolute;
+  top: 85%;
+  right: 50px;
+  transform: translateY(-50%) rotate(45deg);
+  width: 30px;
+  height: 30px;
+  border-bottom: 5px solid #fff;
+  border-right: 5px solid #fff;
+  background-color: transparent;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-50%) rotate(45deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(45deg) scaleY(0.7);
+  }
+}
