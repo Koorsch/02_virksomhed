@@ -4,6 +4,7 @@
   padding: 0;
 }
 .content img {
+  height: 300px;
   width: auto;
   border: double #2e451a;
   border-width: 6px;
@@ -62,6 +63,8 @@ p {
   font-size: 1rem;
   line-height: 1.8;
   padding-bottom: 30px;
+  margin-left: 40px;
+  margin-top: 20px;
 }
 a,
 li {
@@ -166,7 +169,7 @@ CONTENT - main content box
 .content {
   display: flex;
   flex-direction: column;
-  margin: 3vw 10vw;
+  margin: 3vw 6vw;
   padding: 0.5rem;
   background-color: var(--secondary);
   border: var(--primary) solid 2px;
@@ -175,18 +178,29 @@ CONTENT - main content box
 /**
 BOXTING
 **/
+
 .box {
   background-color: white;
-
-  margin-top: 10vh;
+  margin-top: 5vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   padding-bottom: 5vh;
   width: 100%;
+  margin-left: 6px;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.box h1 {
+  margin-left: 40px;
+  text-align: center;
+}
+hr {
+  color: #910923;
+  margin-left: 40px;
 }
 .box2 {
   background-color: white;
-  margin-top: 5vh;
   justify-content: center;
   align-items: center;
   width: 100%;

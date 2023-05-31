@@ -2,23 +2,30 @@ h2 {
   font-size: 60px;
   text-align: center;
   color: #910923;
+<<<<<<< HEAD
   margin-top: 40px;
+=======
+  margin-top: px;
+>>>>>>> 2f726ed21dd82cd44107e35de40e21db03506a0c
 }
 hr {
   color: #910923;
 }
 
-.paabning {
-  margin-left: 30px;
+.content .grid1 .paabning p {
+  margin-left: 20px;
   margin-right: 90px;
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 30px;
 }
 
-.mgp {
-  height: 400px;
-  width: auto;
+.content .grid1 .mgp {
+  height: auto;
+  width: 500px;
   margin-bottom: 40px;
+  border: double #2e451a;
+  border-width: 6px;
+  margin-top: 50px;
 }
 
 h3 {
