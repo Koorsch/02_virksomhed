@@ -1,15 +1,468 @@
-/**
-BOXTING
-**/
-.grid2 {
+/* ###################### BOXTING ########################*/
+.container {
   display: grid;
+  grid-template-columns: 1fr;
+  padding: 3vh;
+  margin: 2vh;
+  justify-content: center;
+  align-content: center;
+}
+.box-2 {
+  display: grid;
+  width: 100%;
+  height: 100%;
   grid-template-columns: repeat(2, 1fr);
 }
-.grid3 {
+.box-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.grid2.preview img {
-  width: 50%;
-  height: 50%;
+
+.logo img {
+  width: 100%;
+  min-width: 130px;
+  height: auto;
+}
+/* ################### BOX TING END ##################### /*
+
+/* SPISE MENU TING */
+
+.menu-thumbnails {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  transition: transform 0.2 ease-in-out;
+  flex-direction: row;
+}
+
+.menu-thumbnails img {
+  width: 200px;
+  height: auto;
+  margin: 10px;
+  cursor: pointer;
+}
+.menu-thumbnails img:hover {
+  transform: scale(1.1);
+}
+/* #############MENU TING  ############## */
+.pdf-container {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+}
+
+.pdf-container.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.pdf-content {
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pdf-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.pdf-buttons button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 5px;
+  transition: transform 0.2s ease-in-out;
+}
+.pdf-buttons button:hover {
+  background-color: aqua;
+  transform: scale(1.1);
+}
+iframe {
+  border: 0;
+}
+
+@media print {
+  .pdf-container {
+    display: none;
+  }
+}
+@media (max-width: 1200px) {
+  .pdf-content {
+    width: 90%;
+    height: 90%;
+    background-color: #fff;
+    padding: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .pdf-content {
+    width: 95%;
+    height: 95%;
+    background-color: #fff;
+    padding: 10px;
+  }
+  .menu-thumbnails {
+    display: flex;
+    flex-direction: column;
+  }
+}
+/* ANDRE TING TIL MENUER */
+.flex-col {
+  order: 1;
+  flex-direction: column !important;
+}
+@media (max-width: 1000px) {
+  .box-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+  .flex-col {
+    order: 2;
+    flex-direction: row !important;
+  }
+}
+/* ANDRE TING TIL MENUER END */
+/* MENU TING END */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ####### STYLING PÅ BILLEDER DER SKAL HA DOBBEL BORDER ### 
+#### HUSK AT TILFØJE KLASSEN HVIS NI SKAL BRUGE DEN, kun inde i main ### 
+*/
+.content .border-box img {
+  border: double #2e451a;
+  border-width: 6px;
+}
+@font-face {
+  src: url(..//media/fonts/Italianno-Regular.ttf);
+  font-family: "ital";
+}
+@font-face {
+  src: url(..//media/fonts/BERNHC.TTF);
+  font-family: "bern";
+}
+
+/* 
+## BRUG AF VARIABLER, niks pille her ## 
+## SKAL I BRUGE SÅ HUSK var(--navn) ##
+*/
+html {
+  --primary: #910923;
+  --secondary: white;
+  --tertiary: ;
+  --text-space: 1rem;
+
+  --h1_font: "ital";
+  --h2_font: "bern";
+  --h3_font: "bern";
+  --font: monospace, Courier, monospace;
+}
+a:visited,
+a:link,
+a:hover,
+a:active {
+  text-decoration: none;
+  list-style: none;
+  color: var(--primary);
+}
+body {
+  background-image: url(..//media/images/baggrund.webp);
+  background-repeat: repeat;
+  width: 100%;
+  margin: auto;
+}
+/*
+#TEXT - H1, H2, H3, P etc etc
+*/
+h1 {
+  font-family: var(--h1_font);
+  font-size: 3rem;
+  color: #910923;
+}
+h2 {
+  font-family: var(--h2_font), var(--font);
+  font-size: 3.5rem;
+}
+h3 {
+  font-family: var(--h3_font), var(--font);
+  font-size: 2rem;
+}
+p {
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.8;
+  padding-bottom: 30px;
+}
+a,
+li {
+  font-family: var(--font);
+  font-size: 1.5rem;
+}
+
+/* #TOP - HEADER
+*/
+header {
+  display: flex;
+  color: var(--primary);
+}
+.banner {
+  align-items: center;
+  padding: 10px;
+  gap: 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: 1vw 8vw;
+}
+.logo {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  align-items: center;
+  justify-items: center;
+  width: 100%;
+}
+.logo h1 {
+  font-size: calc(100vw / 14);
+}
+.logo img {
+  width: 130px;
+}
+
+/* #BOTTOM - FOOTER     */
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--secondary);
+  gap: 10px;
+  flex-grow: 1;
+  padding: 15px 0 5px 0;
+  margin: auto;
+  font-size: calc(70vw / 55);
+}
+footer a:link {
+  color: var(--secondary);
+  font-size: inherit;
+}
+footer li {
+  display: flex;
+  padding: 10px;
+  align-content: space-between;
+  justify-content: space-between;
+  font-size: inherit;
+}
+/*
+#NAVIGATION - MENU
+*/
+#menu_toggle {
+  background: transparent;
+  border: none;
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: none;
+}
+.menu {
+  display: flex;
+  flex-direction: row;
+  height: 0;
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  gap: 15px;
+}
+.menu ul {
+  display: contents;
+}
+.menu a {
+  font-size: 1.3rem;
+}
+.menu li {
+  padding: 15px;
+}
+
+/* FOOTER NAV */
+footer ul {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+/*
+CONTENT - main content box
+*/
+.content {
+  display: flex;
+  flex-direction: column;
+  margin: 3vw 6vw;
+  padding: 0.5rem;
+  background-color: var(--secondary);
+  border: var(--primary) solid 2px;
+  border-radius: 3px;
+}
+/*
+BOXTING
+*/
+.box {
+  background-color: white;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-bottom: 5vh;
+  width: 100%;
+}
+.box2 {
+  background-color: white;
+  margin-top: 5vh;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+#left {
+  grid-area: 1 span row;
+  margin-left: 6vh;
+}
+/* MEDIA QUERIES TIL STØRRELSER */
+@media (max-width: 1000px) {
+  .logo {
+    grid-template-columns: 1fr 8fr;
+  }
+}
+@media (max-width: 800px) {
+  footer ul {
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: calc(85vw / 45);
+  }
+}
+@media (max-width: 640px) {
+  .banner {
+    align-items: center;
+    padding: 10px;
+    gap: 15px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    margin: 3vw 5vw;
+  }
+  .logo {
+    grid-template-columns: 2fr 1fr;
+  }
+  /* Menu gemt i desktop størrelse */
+  .menu {
+    display: none;
+  }
+  .box {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-bottom: 5vh;
+  }
+
+  .box2 {
+    background-color: white;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    margin-top: 10vh;
+  }
+
+  #left {
+    grid-area: 1 span row;
+    margin-left: 6vh;
+    margin-right: 6vh;
+  }
+  .content button {
+    background-color: #2e451a;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* JS interaktion */
+  .menu.shown {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu.shown li {
+    z-index: 1;
+    border: var(--secondary) 2px solid;
+    background-color: var(--primary);
+    color: var(--secondary);
+    width: 150px;
+  }
+  .menu.shown a {
+    color: var(--secondary);
+  }
+  /* JS interaktion end */
+  #menu_toggle {
+    display: block;
+  }
+  #main-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  #main-menu span {
+    font-family: var(--h2_font);
+    color: var(--primary);
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  header.banner h1 {
+    display: none;
+  }
+  footer {
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 400px) {
+  #main-menu span {
+    font-size: 2.5rem;
+  }
+}
+
+video {
+  width: 100%;
+}
+
+.video {
+  width: 100%;
 }
