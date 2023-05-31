@@ -291,6 +291,9 @@ hr {
     display: block;
     margin: 0 auto;
   }
+  .overlay-button a {
+    color: var(--secondary);
+  }
 
   /* JS interaktion */
   .menu.shown {
@@ -361,7 +364,8 @@ hr {
 .overlay-button {
   position: absolute;
   left: 50%;
-  bottom: 90px;
+  color: var(--secondary);
+  bottom: 100px;
   transform: translateX(-50%);
   background-color: #2e451a;
   border: none;
@@ -369,7 +373,7 @@ hr {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 30px;
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
@@ -387,6 +391,9 @@ hr {
     font-size: 20px;
     padding: 10px 20px;
     bottom: 370px;
+  }
+  .overlay-button a {
+    color: var(--secondary);
   }
 }
 
