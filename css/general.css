@@ -156,6 +156,9 @@ footer li {
 .menu li {
   padding: 15px;
 }
+.menu a:hover {
+  text-decoration: underline;
+}
 
 /* FOOTER NAV */
 footer ul {
